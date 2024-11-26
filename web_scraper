@@ -8,11 +8,11 @@ year = 2024
 month = 11
 content = ""
 
-# HTML template with placeholders
 html_template = '''
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <title>Extracted Data</title>
 </head>
 <body>
@@ -45,7 +45,6 @@ for category in categories:
 
 assessment_a = html_template.format(content=content)
 
-# Save the HTML to a file
 with open('extracted_data.html', 'w') as file:
     file.write(assessment_a)
 
